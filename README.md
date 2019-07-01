@@ -1,20 +1,24 @@
-# Gitdiffer
+# DiffTool
 
-Visual Studio Code extension for running git difftool and git mergetools to resolve merge conflict.
+Visual Studio Code extension for running difftool, git difftool and git mergetools to resolve merge conflict.
+
+This project is forked from [GitDiffer](https://github.com/Aghabeiki/gitdiffer).
 
 
 ### Some tips:
-* I tried to use an other [extention](https://github.com/narekmal/vscode-run-git-difftool) but it didn't work for me, so I created my own . 
-* just tested on Arch Linux.
-* for running git difftools, use source control toolbox in vscode, right click on file and select "Launch Difftool for ..." 
-* for running git mergetool, use sorce control toolbox in vscode, beside the title menu (...), select the "Launch Mergetool" or simple open the command plate and run "Launch Mergetool" 
+* Aghabeiki has tried to use other extention but it didn't fit, so he created [GitDiffer](https://marketplace.visualstudio.com/items?itemName=aaghabeiki.gitdiffer).
+* I also want to use other diff tools in vscode explorer.
+* tested on macOS Mojave.
+* for running difftools, use explorer in vscode, select two or three files, right click and select "Launch Difftool for ..."
+* for running git difftools, use source control toolbox in vscode, right click on file and select "Launch Difftool for ..."
+* for running git mergetool, use source control toolbox in vscode, beside the title menu (...), select the "Launch Mergetool" or simple open the command plate and run "Launch Mergetool"
 
-### Installation Steps : 
-* First install [diffmerge](https://sourcegear.com/diffmerge/).
+### Installation Steps: 
+* First install [diffmerge](https://sourcegear.com/diffmerge/) or any other alternatives.
 * Add this configuration to your git global config :
 
     ```
-    git config --global  diff.tool diffmerge
+    git config --global diff.tool diffmerge
     git config --global difftool.diffmerge.cmd diffmerge "$LOCAL" "$REMOTE"
     git config --global merge.tool diffmerge
     git config --global mergetool.diffmerge.cmd diffmerge --merge --result="$MERGED" "$LOCAL" "$(if test -f "$BASE"; then echo "$BASE"; else echo "$LOCAL"; fi)" "$REMOTE"
@@ -27,5 +31,5 @@ Visual Studio Code extension for running git difftool and git mergetools to reso
 * This extention should work with other [diffmerge](https://sourcegear.com/diffmerge/) tools.
 * git configurations depends on the used tools. 
 
-[Bug Reports](https://github.com/RaianRaika/gitdiffer/issues)<br>
-[Repo](https://github.com/RaianRaika/gitdiffer)
+[Bug Reports](https://github.com/gongxiao/difftool/issues)  
+[Repo](https://github.com/gongxiao/difftool)

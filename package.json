@@ -1,9 +1,9 @@
 {
-  "name": "gitdiffer",
-  "displayName": "GitDiffer",
+  "name": "difftool",
+  "displayName": "DiffTool",
   "description": "Just launch git difftools & Mergetool for resolve merge conflict",
-  "version": "0.0.3",
-  "publisher": "aaghabeiki",
+  "version": "0.1.0",
+  "publisher": "gxiao",
   "engines": {
     "vscode": "^1.11.0"
   },
@@ -11,12 +11,17 @@
     "Other"
   ],
   "activationEvents": [
+    "onCommand:extension.diffTool",
     "onCommand:extension.gitDiffer",
     "onCommand:extention.gitMergetool"
   ],
   "main": "./extension",
   "contributes": {
     "commands": [
+      {
+        "command": "extension.diffTool",
+        "title": "Launch Difftool for ..."
+      },
       {
         "command": "extension.gitDiffer",
         "title": "Launch Difftool for ..."
@@ -27,6 +32,13 @@
       }
     ],
     "menus": {
+      "explorer/context": [
+        {
+          "when": "filesExplorerFocus",
+          "command": "extension.diffTool",
+          "group": "3_compare"
+        }
+      ],
       "scm/resourceState/context": [
         {
           "command": "extension.gitDiffer"
@@ -44,23 +56,23 @@
     "test": "node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "typescript": "^2.0.3",
-    "vscode": "^1.0.0",
-    "mocha": "^2.3.3",
-    "eslint": "^3.6.0",
+    "@types/mocha": "^2.2.32",
     "@types/node": "^6.0.40",
-    "@types/mocha": "^2.2.32"
+    "eslint": "^4.18.2",
+    "mocha": "^6.1.4",
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0"
   },
   "dependencies": {
     "simple-git": "^1.70.0"
   },
-  "homepage": "https://github.com/RaianRaika/gitdiffer",
+  "homepage": "https://github.com/gongxiao/difftool",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RaianRaika/gitdiffer.git"
+    "url": "git+https://github.com/gongxiao/difftool.git"
   },
   "bugs": {
-    "url": "https://github.com/RaianRaika/gitdiffer/issues"
+    "url": "https://github.com/gongxiao/difftool/issues"
   },
   "license": "MIT",
   "keywords": [
@@ -72,5 +84,5 @@
     "conflict",
     "extensions"
   ],
-  "author": "A.Aghabeiki"
+  "author": "G.Xiao"
 }
