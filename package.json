@@ -84,5 +84,7 @@
     "conflict",
     "extensions"
   ],
-  "author": "G.Xiao"
+  "__metadata": {
+    "publisherDisplayName": "Gong Xiao"
+  }
 }
