@@ -1,4 +1,4 @@
-# DiffTool
+# DiffTool for Visual Studio Code
 
 Visual Studio Code extension for running difftool, git difftool and git mergetools to resolve merge conflict.
 
