@@ -73,7 +73,7 @@ function activate(context) {
         }
 
     });
-    var gitMergetool= vscode.commands.registerCommand('extention.gitMergetool',function(){
+    var gitMergetool= vscode.commands.registerCommand('extension.gitMergetool',function(){
             var simpleGit = require('simple-git');
             var projectPath = (vscode.workspace.rootPath)
              simpleGit(projectPath).raw(

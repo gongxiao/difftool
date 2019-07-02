@@ -13,7 +13,7 @@
   "activationEvents": [
     "onCommand:extension.diffTool",
     "onCommand:extension.gitDiffer",
-    "onCommand:extention.gitMergetool"
+    "onCommand:extension.gitMergetool"
   ],
   "main": "./extension",
   "contributes": {
@@ -27,7 +27,7 @@
         "title": "Launch Difftool for ..."
       },
       {
-        "command": "extention.gitMergetool",
+        "command": "extension.gitMergetool",
         "title": "Launch Mergetool"
       }
     ],
@@ -46,7 +46,7 @@
       ],
       "scm/title": [
         {
-          "command": "extention.gitMergetool"
+          "command": "extension.gitMergetool"
         }
       ]
     }
