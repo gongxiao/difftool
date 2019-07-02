@@ -2,7 +2,7 @@
   "name": "difftool",
   "displayName": "DiffTool",
   "description": "Just launch git difftools & Mergetool for resolve merge conflict",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "gxiao",
   "icon": "icon.png",
   "galleryBanner": {
