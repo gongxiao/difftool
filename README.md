@@ -1,3 +1,7 @@
+[![](https://vsmarketplacebadge.apphb.com/version-short/gxiao.difftool.svg)](https://marketplace.visualstudio.com/items?itemName=gxiao.difftool)
+[![](https://vsmarketplacebadge.apphb.com/downloads-short/gxiao.difftool.svg)](https://marketplace.visualstudio.com/items?itemName=gxiao.difftool)
+[![](https://vsmarketplacebadge.apphb.com/rating-short/gxiao.difftool.svg)](https://marketplace.visualstudio.com/items?itemName=gxiao.difftool)
+
 # DiffTool for Visual Studio Code
 
 Visual Studio Code extension for running difftool, git difftool and git mergetools to resolve merge conflict.
@@ -33,5 +37,10 @@ This project is forked from [GitDiffer](https://github.com/Aghabeiki/gitdiffer).
 * This extension should work with other [diffmerge](https://sourcegear.com/diffmerge/) tools.
 * git configurations depends on the used tools.
 
-[Bug Reports](https://github.com/gongxiao/difftool/issues)  
-[Repo](https://github.com/gongxiao/difftool)
+## TODOs
+
+* add OpenEditorsContext/openEditorsFocus support
+* add operation demo GIF
+
+[Bug Reports](https://github.com/gongxiao/vscode-difftool/issues)  
+[Repo](https://github.com/gongxiao/vscode-difftool)
