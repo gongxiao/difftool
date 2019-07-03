@@ -13,3 +13,7 @@
 ## Version 0.1.2 (2019/07/02)
 
 * add icon
+
+## Version 0.1.3 (2019/07/03)
+
+* support multiple git folders in workspace
