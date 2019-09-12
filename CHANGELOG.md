@@ -17,3 +17,7 @@
 ## Version 0.1.3 (2019/07/03)
 
 * support multiple git folders in workspace
+
+## Version 0.1.4 (2019/09/12)
+
+* change URL to path, this may cause problem in some difftools on macOS (eg. DiffMerge)

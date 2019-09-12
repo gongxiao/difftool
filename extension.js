@@ -27,7 +27,7 @@ function activate(context) {
                     result = result.replace(/(\r\n|\n|\r)$/, "");
                     if (result == "bc3")
                         result = "bcompare";
-                    var builtCommand = "".concat(result, " ", resource.join(" "));
+                    var builtCommand = "".concat(result, " ", resource.map(e => e.fsPath).join(" "));
                     child_process.exec(builtCommand, { cwd: projectPath }, (err, stdout, stderr) => {
                         if (err) {
                             console.error(err);
